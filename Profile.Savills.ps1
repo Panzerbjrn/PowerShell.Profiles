@@ -12,7 +12,7 @@ Start-Transcript -path $LogFile -append
 
 <#
 Write-Host "Loading Exchange Modules"
-#$PS = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://PDVMEX01.fpdsavills.co.uk/PowerShell/ -Authentication Kerberos 
+$PS = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://PRD-MBX5887.BrewinDolphin.Net -Authentication Kerberos 
 Import-PSSession $PS
 Set-ADServerSettings -ViewEntireForest $true
 #>
